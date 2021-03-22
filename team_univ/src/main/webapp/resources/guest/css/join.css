@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+#container{
+	margin:0 auto;
+	width:1024px;
+}
+
+header{
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background: #4374D9;
+}
+#sLogo{
+	color: white;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 10px;
+    line-height: 50px;
+	text-decoration: none;
+	cursor: pointer;
+} 
+/* ------------ */
+section{
+	width:700px;
+	margin:0 auto;
+}
+section h2{
+	text-align: center;
+}
+section table{
+	margin: 0 auto;
+}
+section table tr{
+	height : 60px;
+}
+section table th{
+    width: 120px;
+}
+/* section label{
+	width:150px;
+	display: inline-block;
+	text-align: right;
+    padding: 20px;
+    font-weight: bold;
+} */
+
+.joinInput{
+	width:270px;
+	padding:10px;	
+}
+
+.birthInput, .phoneInput{
+	width:86px;
+	padding:10px;	
+	text-align: center;	
+}
+/* 주소 */
+#sample6_postcode{ /* 우편번호 */
+	width: 130px;
+    padding: 10px;
+}
+.addrInput{
+	width:270px;
+	padding:10px;
+	margin-top: 10px;
+}
+.checkBtn{ /* 중복 확인 버튼, 메일 확인 버튼, 우편번호 찾기 */
+	padding:9.5px 20px;
+	font-size: 15px;
+	border: none;
+	vertical-align: middle; /* input과 나란히 */
+}
+.checkText{ /* 버튼 옆 글씨 */
+	display: none;
+	margin-left:10px;
+	color:blue;
+}
+.correct{ /* 메일 인증번호 일치 */
+	color:blue;
+}
+.incorrect{ /* 메일 인증번호 불일치 */
+	color:red;
+}
+#mMonth{
+	width:87px;
+}
+#emailCodeBox{
+	display:none;
+}
+/* --------------- 성공멘트 */
+.success{ 
+	color:blue;
+}
+/* --------------- 에러멘트 */
+.error{
+	text-align: center;
+	color: red;	
+	margin: 5px 0 15px;
+	display: none;
+    text-align: left;
+}
+#error{ /* 중복확인 창에서 에러멘트 */
+	color:red;
+}
+#errorText{ /* 중복확인 창에서 에러 경고 멘트 */
+	color:red;
+	font-size: 14px;
+	display: none;
+}
+#confirmWrap{ /* 중복확인 창 wrap */
+	width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* --------------- 가입버튼 */
+.btnBox{
+	margin: 30px 0;
+	width: 100%;
+    text-align: center;
+}
+
+.btn{
+	padding:12px 20px;
+	font-size: 15px;
+	border: none;
+}
+
+.joinBtn{ /* 가입하기  버튼 */
+	background: #D9E5FF;
+}
+
+.cancelBtn{ /* 가입취소  버튼 */
+	background: #EAEAEA;
+}

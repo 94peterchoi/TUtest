@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.team.univ.persistence.StudentDAO">
+
+	<!-- 회원가입 - 학생 정보 insert -->
+	<insert id="insertStudent" parameterType="com.team.univ.vo.StudentVO">
+		INSERT INTO employee(emp_id, e_name, e_jumin, e_image, e_join_date, e_state, e_bank, e_acount_holder, e_acount_number, e_recruitment, e_position, dept_no)
+		VALUES(#{emp_id}, #{e_name}, #{e_jumin}, #{e_image}, #{e_join_date}, #{e_state}, #{e_bank}, #{e_acount_holder}, #{e_acount_number}, #{e_recruitment}, #{e_position}, #{dept_no.dept_no})
+	</insert>
+	
+	
+	
+</mapper>

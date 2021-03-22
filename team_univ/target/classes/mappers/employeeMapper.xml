@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.team.univ.persistence.EmployeeDAO">
+
+	<!-- 회원가입 - 직원 정보 insert -->
+	<insert id="insertEmployee" parameterType="com.team.univ.vo.EmployeeVO">
+		INSERT INTO employee(emp_no, emp_name, emp_gender, emp_jumin, emp_zip_code, emp_address, emp_detail_address
+							, emp_phone, emp_image, emp_join_date, emp_quit_date, emp_email, emp_state, emp_bank
+							, emp_account_holder, emp_account_number, emp_recruitment, emp_rank, emp_salary, dept_no)
+		VALUES(#{emp_no}, #{emp_name}, #{emp_gender}, #{emp_jumin}, #{emp_zip_code}, #{emp_address}, #{emp_detail_address, jdbcType=VARCHAR}
+				, #{emp_phone}, #{emp_image, jdbcType=VARCHAR}, #{emp_join_date}, #{emp_quit_date, jdbcType=VARCHAR}, #{emp_email}, #{emp_state}, #{emp_bank}
+				, #{emp_account_holder}, #{emp_account_number}, #{emp_recruitment}, #{emp_rank}, #{emp_salary}, #{dept_no.dept_no})
+	</insert>
+	
+	
+	
+</mapper>
